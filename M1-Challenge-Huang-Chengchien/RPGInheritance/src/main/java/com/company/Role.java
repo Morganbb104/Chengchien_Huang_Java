@@ -1,6 +1,7 @@
 package com.company;
 
-public abstract class Character {
+public abstract class Role {
+    peivate String jurisdiction;
     public String getName() {
         return name;
     }

@@ -1,6 +1,6 @@
 package com.company;
 
-public class Warrior extends Character{
+public class Warrior extends Role {
 
     @Override
     public String getName() {

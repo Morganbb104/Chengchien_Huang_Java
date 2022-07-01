@@ -1,6 +1,9 @@
 package com.company;
 
-public class Farmer extends Character {
+public class Farmer extends Role {
+
+
+
     @Override
     public String getName() {
         return super.getName();
@@ -13,7 +16,7 @@ public class Farmer extends Character {
 
     @Override
     public int getStrength() {
-        return super.getStrength();
+        return super.getStrength(75);
     }
 
     @Override
