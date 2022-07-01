@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Chengchien_Huang_Java.iml" filepath="$PROJECT_DIR$/.idea/Chengchien_Huang_Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/ConverterInterface/ConverterInterface.iml" filepath="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/ConverterInterface/ConverterInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/CustomerComposition/CustomerComposition.iml" filepath="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/CustomerComposition/CustomerComposition.iml" />
       <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/CalculateObject/Ex2CalculateObject.iml" filepath="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/CalculateObject/Ex2CalculateObject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/IceCreamClassDesign/IceCreamClassDesign.iml" filepath="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/IceCreamClassDesign/IceCreamClassDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/RPGInheritance/RPGInheritance.iml" filepath="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/RPGInheritance/RPGInheritance.iml" />
     </modules>
   </component>
 </project>

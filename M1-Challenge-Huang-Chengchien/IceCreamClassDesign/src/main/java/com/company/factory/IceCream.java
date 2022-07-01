@@ -1,7 +1,11 @@
 package com.company.factory;
 
 public class IceCream {
-
+private String flavor;
+private double salePrice;
+private float productionCost;
+private String productionTime;
+private String ingredients;
   public IceCream(String flavor, double salePrice, float productionCost, String productionTime, String ingredients) {
     this.flavor = flavor;
     this.salePrice = salePrice;
@@ -60,16 +64,6 @@ public class IceCream {
             ", ingredients='" + ingredients + '\'' +
             '}';
   }
-
-  //(flavor, salePrice, productionCost, productionTime, ingredients);
-  private String flavor;
-  private double salePrice;
-  private float productionCost;
-  private String productionTime;
-  private String  ingredients;
-
-
-
 
 
 

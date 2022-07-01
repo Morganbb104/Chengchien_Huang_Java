@@ -1,6 +1,10 @@
 package com.company.pointofsale;
 
 public class IceCream {
+
+    private String flavor;
+    private double price;
+    private String quantity;
     public IceCream(String flavor, double price, String quantity) {
         this.flavor = flavor;
         this.price = price;
@@ -40,7 +44,5 @@ public class IceCream {
                 '}';
     }
 
-    private String flavor;
-    private double price;
-    private String quantity;
+
 }

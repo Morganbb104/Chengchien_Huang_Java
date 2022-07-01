@@ -5,6 +5,9 @@
       <list>
         <option value="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/CalculateObject/pom.xml" />
         <option value="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/ConverterInterface/pom.xml" />
+        <option value="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/CustomerComposition/pom.xml" />
+        <option value="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/IceCreamClassDesign/pom.xml" />
+        <option value="$PROJECT_DIR$/M1-Challenge-Huang-Chengchien/RPGInheritance/pom.xml" />
       </list>
     </option>
   </component>
