@@ -1,81 +1,60 @@
 package com.company;
 
-
+import com.company.interfaces.Converter;
 public class ConverterIf implements Converter {
-
-    public void convertMonth(int monthNumber) {
+    @Override
+    public String convertMonth(int monthNumber) {
         if (monthNumber == 1) {
-            System.out.println("Jan");
+            return "January";
         } else if (monthNumber == 2) {
-            System.out.println("Feb");
+            return "February";
         } else if (monthNumber == 3) {
-            System.out.println("Mar");
+            return "March";
         } else if (monthNumber == 4) {
-            System.out.println("Apr");
+            return "April";
         } else if (monthNumber == 5) {
-            System.out.println("May");
+            return "May";
         } else if (monthNumber == 6) {
-            System.out.println("Jun");
+            return "June";
         } else if (monthNumber == 7) {
-            System.out.println("Jul");
+            return "July";
         } else if (monthNumber == 8) {
-            System.out.println("Aug");
+            return "August";
         } else if (monthNumber == 9) {
-            System.out.println("Sep");
+            return "September";
         } else if (monthNumber == 10) {
-            System.out.println("Oct");
+            return "October";
         } else if (monthNumber == 11) {
-            System.out.println("Nov");
+            return "November";
         } else if (monthNumber == 12) {
-            System.out.println("Dec");
+            return "December";
 
         }
+        return "Invalid number, please type between 1-12";
     }
-
-    public void convertDay(int dayNumber){
+    @Override
+    public String convertDay(int dayNumber){
             if (dayNumber == 1) {
-                System.out.println("Sunday");
+                return "Sunday";
             } else if (dayNumber == 2) {
-                System.out.println("Monday");
+                return "Monday";
             } else if (dayNumber == 3) {
-                System.out.println("Tuesday");
+                return "Tuesday";
             } else if (dayNumber == 4) {
-                System.out.println("Wednesday");
+                return "Wednesday";
             } else if (dayNumber == 5) {
-                System.out.println("Thursday");
+                return "Thursday";
             } else if (dayNumber == 6) {
-                System.out.println("Friday");
+                return "Friday";
             } else if (dayNumber == 7) {
-                System.out.println("Saturday");
+                return "Saturday";
             } else {
-                System.out.println("Wrong number, please type 1 to 7");
+                return "Wrong number, please type 1 to 7";
             }
 
         }
 
 }
 
-//            switch (dayNumber) {
-//                case 1:
-//                    System.out.println("Sunday");//Monday"
-//                    break;
-//                case 2:
-//                    System.out.println("Monday");//Monday
-//                    break;
-//                case 3:
-//                    System.out.println("Tuesday");//Tuesday
-//                    break;
-//                case 4:
-//                    System.out.println("Wednesday");//Wednesday"
-//                    break;
-//                case 5:
-//                    System.out.println("Thursday");//Thursday
-//                    break;
-//                case 6:
-//                    System.out.println("Friday");//Friday
-//                    break;
-//                case 7:
-//                    System.out.println("Saturday");//Saturday
-//                    break;
-//            }
+
 

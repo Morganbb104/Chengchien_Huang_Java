@@ -1,4 +1,4 @@
-package com.company;
+package com.company.interfaces;
 
 public interface Converter {
     /**
@@ -6,8 +6,8 @@ public interface Converter {
      * @param monthNumber&mdash;the number you wish to convert to a month
      * @return&mdash;the name of the corresponding month if the parameter value is between 1 and 12; error message otherwise
      */
-    void convertMonth(int monthNumber);
-    void convertDay(int dayNumber);
+    String convertMonth(int monthNumber);
+    String convertDay(int dayNumber);
 
     /**
      * This method converts the given number into its corresponding day of the week.

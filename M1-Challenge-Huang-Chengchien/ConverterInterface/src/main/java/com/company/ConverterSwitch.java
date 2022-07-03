@@ -1,74 +1,57 @@
 package com.company;
 
-public class ConverterSwitch {
-    public void convertMonth(int monthNumber){
+import com.company.interfaces.Converter;
+
+public class ConverterSwitch implements Converter {
+    public String convertMonth(int monthNumber){
         switch (monthNumber) {
             case 1:
-                System.out.println("Jan");
-                break;
+                return "January";
             case 2:
-                System.out.println("Feb");
-                break;
+                return "February";
             case 3:
-                System.out.println("Mar");
-                break;
+                return "March";
             case 4:
-                System.out.println("Apr");
-                break;
+                return "April";
             case 5:
-                System.out.println("May");
-                break;
+                return "May";
             case 6:
-                System.out.println("Jun");
-                break;
+                return "June";
             case 7:
-                System.out.println("Jul");
-                break;
+                return "July";
             case 8:
-                System.out.println("Aug");
-                break;
+                return "August";
             case 9:
-                System.out.println("Sep");
-                break;
+                return "September";
             case 10:
-                System.out.println("Oct");
-                break;
+                return "October";
             case 11:
-                System.out.println("Nov");
-                break;
+                return "November";
             case 12:
-                System.out.println("Dec");
-                break;
+                return "December";
             default:
-                System.out.println("Please type number 1 to 12");
+                return "Please type number 1 to 12";
         }
     }
 
-    public void convertDay(int dayNumber){
+    public String convertDay(int dayNumber){
                     switch (dayNumber) {
                 case 1:
-                    System.out.println("Sunday");
-                    break;
+                    return "Sunday";
                 case 2:
-                    System.out.println("Monday");
-                    break;
+                    return "Monday";
                 case 3:
-                    System.out.println("Tuesday");
-                    break;
+                    return "Tuesday";
                 case 4:
-                    System.out.println("Wednesday");
-                    break;
+                    return "Wednesday";
                 case 5:
-                    System.out.println("Thursday");
-                    break;
+                    return "Thursday";
                 case 6:
-                    System.out.println("Friday");
-                    break;
+                    return "Friday";
                 case 7:
-                    System.out.println("Saturday");
-                    break;
+                    return "Saturday";
                     default:
-                        System.out.printf("please type number 1 to 7");
+                        return "please type number 1 to 7";
 
             }
     }

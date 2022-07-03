@@ -1,14 +1,24 @@
 package com.company;
 
+import com.company.interfaces.Converter;
+import org.junit.Before;
+import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 public class ConverterIfTest {
 
-    @org.junit.Test
-    public void convertMonth() {
+    Converter converterIf;
+    @Before
+    public void setUp()  {
+        converterIf = new ConverterIf();
     }
 
-    @org.junit.Test
-    public void convertDay() {
+    @Test
+    public void shouldReturnMonthFromGivenNumber() {
+        String expectedOutput = "Jan";
+        int actualOutput = ConverterIf.convertMonth(1);
+        assertEquals(expectedOutput, actualOutput);
     }
+
 }
