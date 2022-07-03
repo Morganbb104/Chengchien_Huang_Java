@@ -12,7 +12,6 @@ public class Calculator {
         System.out.println( x+ "+" +y + "=" + result );
         return result;}
 
-
     //subtract
     public static int subtract(int x, int y){
         int result = x -y;
