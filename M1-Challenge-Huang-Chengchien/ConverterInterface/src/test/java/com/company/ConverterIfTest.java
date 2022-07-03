@@ -16,9 +16,15 @@ public class ConverterIfTest {
 
     @Test
     public void shouldReturnMonthFromGivenNumber() {
-        String expectedOutput = "Jan";
-        int actualOutput = ConverterIf.convertMonth(1);
-        assertEquals(expectedOutput, actualOutput);
+        assertEquals("January", converterIf.convertMonth(1));
+        assertEquals("June", converterIf.convertMonth(6));
+        assertEquals("December", converterIf.convertMonth(12));
+    }
+
+    @Test
+    public void shouldReturnDayfromGivenNumber(){
+        assertEquals("Sunday", converterIf.convertDay(1));
+        assertEquals("Friday", converterIf.convertDay(6));
     }
 
 }
