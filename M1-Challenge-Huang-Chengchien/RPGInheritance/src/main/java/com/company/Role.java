@@ -1,6 +1,16 @@
 package com.company;
 
 public abstract class Role {
+    //Properties:
+    private String name;
+    private int strength;
+    private int health;
+    private int stamina;
+    private int speed;
+    private int attackPower;
+    private boolean running;
+    private int plowing;
+    private int harvesting;
     peivate String jurisdiction;
     public String getName() {
         return name;
@@ -74,16 +84,7 @@ public abstract class Role {
         this.harvesting = harvesting;
     }
 
-    //Properties:
-    private String name;
-    private int strength;
-    private int health;
-    private int stamina;
-    private int speed;
-    private int attackPower;
-    private boolean running;
-    private int plowing;
-    private int harvesting;
+
     //Abilities:
     //attack another character
     abstract public void attack();
