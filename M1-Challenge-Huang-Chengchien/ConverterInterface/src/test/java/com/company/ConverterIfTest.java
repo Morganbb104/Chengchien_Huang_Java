@@ -22,7 +22,7 @@ public class ConverterIfTest {
     }
 
     @Test
-    public void shouldReturnDayfromGivenNumber(){
+    public void shouldReturnDayFromGivenNumber(){
         assertEquals("Sunday", converterIf.convertDay(1));
         assertEquals("Friday", converterIf.convertDay(6));
     }
