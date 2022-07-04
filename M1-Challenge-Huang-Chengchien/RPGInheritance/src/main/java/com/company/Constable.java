@@ -1,12 +1,19 @@
 package com.company;
 
 public class Constable extends Role {
-    private String;
+    boolean jurisdiction;
     public Constable() {
-        this.strength =60;
-        this.health =100
-
+        super();
+        this.setStrength(60);
+        this.setHealth(100);
+        this.setStamina(60);
+        this.setSpeed(20);
+        this.setAttackPower(5);
+        this.setRunning(false);
+        this.setArrested(false);
     }
+
+    public void
 
     @Override
     public String getName() {
@@ -78,25 +85,6 @@ public class Constable extends Role {
         super.setRunning(running);
     }
 
-    @Override
-    public int getPlowing() {
-        return super.getPlowing();
-    }
-
-    @Override
-    public void setPlowing(int plowing) {
-        super.setPlowing(plowing);
-    }
-
-    @Override
-    public int getHarvesting() {
-        return super.getHarvesting();
-    }
-
-    @Override
-    public void setHarvesting(int harvesting) {
-        super.setHarvesting(harvesting);
-    }
 
     @Override
     public void attack() {

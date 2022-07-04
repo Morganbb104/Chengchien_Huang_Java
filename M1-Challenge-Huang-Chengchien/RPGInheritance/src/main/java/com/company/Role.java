@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.Objects;
+
 public abstract class Role {
     //Properties:
     private String name;
@@ -9,10 +11,8 @@ public abstract class Role {
     private int speed;
     private int attackPower;
     private boolean running;
-    private int plowing;
-    private int harvesting;
+    boolean arrested;
 
-    private String jurisdiction;
     public String getName() {
         return name;
     }
@@ -69,25 +69,43 @@ public abstract class Role {
         this.running = running;
     }
 
-    public int getPlowing() {
-        return plowing;
+    public boolean isArrested() {
+        return arrested;
     }
 
-    public void setPlowing(int plowing) {
-        this.plowing = plowing;
+    public void setArrested(boolean arrested) {
+        this.arrested = arrested;
     }
 
-    public int getHarvesting() {
-        return harvesting;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Role role = (Role) o;
+        return strength == role.strength && health == role.health && stamina == role.stamina && speed == role.speed && attackPower == role.attackPower && running == role.running && arrested == role.arrested && Objects.equals(name, role.name);
     }
 
-    public void setHarvesting(int harvesting) {
-        this.harvesting = harvesting;
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, strength, health, stamina, speed, attackPower, running, arrested);
     }
 
+    @Override
+    public String toString() {
+        return "Role{" +
+                "name='" + name + '\'' +
+                ", strength=" + strength +
+                ", health=" + health +
+                ", stamina=" + stamina +
+                ", speed=" + speed +
+                ", attackPower=" + attackPower +
+                ", running=" + running +
+                ", arrested=" + arrested +
+                '}';
+    }
 
     //Abilities:
     //attack another character
-    abstract public void attack();
+    abstract public void attack(Role );
 
 }

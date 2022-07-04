@@ -3,11 +3,11 @@ package com.company.factory;
 import java.util.Objects;
 
 public class IceCream {
-    String flavor;
-    double salePrice;
-    float productionCost;
-    String productionTime;
-    String ingredients;
+    private String flavor;
+    private double salePrice;
+    private float productionCost;
+    private String productionTime;
+    private String ingredients;
 
     public IceCream(String flavor, double salePrice, float productionCost, String productionTime, String ingredients) {
         this.flavor = flavor;
@@ -17,11 +17,13 @@ public class IceCream {
         this.ingredients = ingredients;
     }
 
-    private boolean promotionShouldBeUnder10USD() {
+    public IceCream(){};
+
+    public boolean promotionShouldBeUnder10USD() {
         return this.salePrice <= 10;
     }
 
-    private boolean costShouldBeUnder5USD() {
+    public boolean costShouldBeUnder5USD() {
         return this.productionCost <= 5;
     }
 

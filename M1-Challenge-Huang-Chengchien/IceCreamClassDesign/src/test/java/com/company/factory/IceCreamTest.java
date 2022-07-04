@@ -15,6 +15,17 @@ public class IceCreamTest {
 
     }
 
+    @Test
+    public void costShouldBeUnder5USD(){
+        IceCream iceCream = new IceCream();
+        assertEquals(true,iceCream.costShouldBeUnder5USD());
+    }
+
+    @Test
+    public void promotionShouldBeUnder10USD(){
+        IceCream iceCream = new IceCream();
+        assertEquals(true,iceCream.promotionShouldBeUnder10USD());
+    }
 
 
 }
