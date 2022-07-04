@@ -10,6 +10,15 @@ public class Address {
     private String state;
     private String zipcode;
 
+    //constructor
+    public Address(String street1,String street2,String city,String state,String zipcode){
+        this.street1 = street1;
+        this.street2 = street2;
+        this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
+    }
+
     public String getStreet1() {
         return street1;
     }
