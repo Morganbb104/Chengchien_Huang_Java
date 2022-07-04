@@ -1,5 +1,7 @@
 package com.company.pointofsale;
 
+import java.util.Objects;
+
 public class IceCream {
 
     private String flavor;
@@ -10,6 +12,20 @@ public class IceCream {
         this.price = price;
         this.quantity = quantity;
     }
+
+    private double get3oneForFree(){
+        return this.price*2%3;
+    }
+
+    public void quantityOnThePackage(){
+        System.out.println("The current quantity is "+quantity);
+    }
+
+    private double forCharity(){
+        return this.price*(80/100);
+    }
+
+
 
     public String getFlavor() {
         return flavor;
@@ -44,5 +60,16 @@ public class IceCream {
                 '}';
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        IceCream iceCream = (IceCream) o;
+        return Double.compare(iceCream.price, price) == 0 && Objects.equals(flavor, iceCream.flavor) && Objects.equals(quantity, iceCream.quantity);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(flavor, price, quantity);
+    }
 }

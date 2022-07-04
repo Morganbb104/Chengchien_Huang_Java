@@ -16,7 +16,7 @@ private String ingredients;
     this.ingredients = ingredients;
   }
 
-  private boolean priceShouldBeUnder10USD(){
+  private boolean promotionShouldBeUnder10USD(){
     return this.salePrice <=10;
   }
 
@@ -28,7 +28,6 @@ private String ingredients;
     return this.salePrice+=2;
   }
 
-  private String
 
   public String getFlavor() {
     return flavor;
