@@ -13,16 +13,20 @@ public class IceCream {
         this.quantity = quantity;
     }
 
-    private double get3oneForFree(){
-        return this.price*2%3;
+    public IceCream() {
+
     }
 
-    public void quantityOnThePackage(){
-        System.out.println("The current quantity is "+quantity);
+    public double buy3GetOneFree(){
+        return this.price*2/3;
     }
 
-    private double forCharity(){
-        return this.price*(80/100);
+    public String quantityOnThePackage(){
+        return "The current quantity is "+quantity;
+    }
+
+    public double forCharity(){
+        return this.price*0.8;
     }
 
 
