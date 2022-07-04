@@ -11,7 +11,8 @@ public abstract class Role {
     private boolean running;
     private int plowing;
     private int harvesting;
-    peivate String jurisdiction;
+
+    private String jurisdiction;
     public String getName() {
         return name;
     }

@@ -1,5 +1,7 @@
 package com.company.factory;
 
+import java.util.Objects;
+
 public class IceCream {
 private String flavor;
 private double salePrice;
@@ -13,6 +15,20 @@ private String ingredients;
     this.productionTime = productionTime;
     this.ingredients = ingredients;
   }
+
+  private boolean priceShouldBeUnder10USD(){
+    return this.salePrice <=10;
+  }
+
+  private boolean costShouldBeUnder5USD(){
+    return this.productionCost <=5;
+  }
+
+  private double addingTopCream(){
+    return this.salePrice+=2;
+  }
+
+  private String
 
   public String getFlavor() {
     return flavor;
@@ -65,6 +81,16 @@ private String ingredients;
             '}';
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    IceCream iceCream = (IceCream) o;
+    return Double.compare(iceCream.salePrice, salePrice) == 0 && Float.compare(iceCream.productionCost, productionCost) == 0 && Objects.equals(flavor, iceCream.flavor) && Objects.equals(productionTime, iceCream.productionTime) && Objects.equals(ingredients, iceCream.ingredients);
+  }
 
-
+  @Override
+  public int hashCode() {
+    return Objects.hash(flavor, salePrice, productionCost, productionTime, ingredients);
+  }
 }

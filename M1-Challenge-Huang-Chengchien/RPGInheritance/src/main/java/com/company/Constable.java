@@ -1,7 +1,7 @@
 package com.company;
 
 public class Constable extends Role {
-    private String
+    private String;
     public Constable() {
         this.strength =60;
         this.health =100

@@ -1,6 +1,11 @@
 package com.company;
 
+import org.omg.CORBA.PUBLIC_MEMBER;
+
 public class Farmer extends Role {
+    public Farmer(){
+
+    };
 
 
 
@@ -16,7 +21,7 @@ public class Farmer extends Role {
 
     @Override
     public int getStrength() {
-        return super.getStrength(75);
+        return super.getStrength();
     }
 
     @Override
