@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 public class IceCreamTest {
 
     @Test
-    public void buy3GetOneFree(){
+    public void buy3GetOneFreeShouldReturn2Over3Price(){
         IceCream iceCream = new IceCream();
         iceCream.setPrice(2);
         double expectedOutput = 1.33;
@@ -17,7 +17,7 @@ public class IceCreamTest {
     }
 
     @Test
-    public void forCharity(){
+    public void forCharityShouldReturn20PercentOff(){
         IceCream iceCream = new IceCream();
         iceCream.setPrice(2);
         double expectedOutput = 1.6;
@@ -27,7 +27,7 @@ public class IceCreamTest {
     }
 
     @Test
-    public void quantityOnThePackage(){
+    public void quantityOnThePackageShouldReturnPrintedQualityString(){
         IceCream iceCream = new IceCream();
         iceCream.setQuantity("Excellent");
         String expectedOutput = "The current quantity is Excellent";

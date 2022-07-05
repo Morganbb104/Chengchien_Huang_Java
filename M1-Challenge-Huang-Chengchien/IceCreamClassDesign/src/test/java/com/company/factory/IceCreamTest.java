@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class IceCreamTest {
     @Test
-    public void addingTopCream(){
+    public void addingTopCreamShouldReturn2MoreDollars(){
         IceCream iceCream = new IceCream();
         iceCream.addingTopCream();
         double expectedOutput = 2 ;
@@ -16,13 +16,13 @@ public class IceCreamTest {
     }
 
     @Test
-    public void costShouldBeUnder5USD(){
+    public void costShouldBeUnder5USDShouldBeReturnTrue(){
         IceCream iceCream = new IceCream();
         assertEquals(true,iceCream.costShouldBeUnder5USD());
     }
 
     @Test
-    public void promotionShouldBeUnder10USD(){
+    public void promotionShouldBeUnder10USDShouldBeReturnTrue(){
         IceCream iceCream = new IceCream();
         assertEquals(true,iceCream.promotionShouldBeUnder10USD());
     }
