@@ -12,7 +12,15 @@ public class Constable extends Role {
         this.setRunning(false);
         this.setArrested(false);
     }
-    boolean jurisdiction;
 
+    boolean jurisdiction;
+    public Constable(boolean jurisdiction) {
+        this.jurisdiction = jurisdiction;
+    }
+
+    @Override
+    public void attack() {
+
+    }
 }
 
