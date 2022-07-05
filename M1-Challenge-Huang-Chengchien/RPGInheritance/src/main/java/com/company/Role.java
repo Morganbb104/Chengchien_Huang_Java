@@ -106,6 +106,6 @@ public abstract class Role {
 
     //Abilities:
     //attack another character
-    abstract public void attack(Role );
+    abstract public void attack();
 
 }
