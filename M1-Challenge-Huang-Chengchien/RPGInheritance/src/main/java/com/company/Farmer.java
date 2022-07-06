@@ -23,7 +23,9 @@ public class Farmer extends Role {
         this.harvesting = harvesting;
     }
 
+    public Farmer() {
 
+    }
 
 
     public boolean isPlowing(boolean b) {

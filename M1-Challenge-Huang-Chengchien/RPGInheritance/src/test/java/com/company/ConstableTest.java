@@ -11,30 +11,31 @@ public class ConstableTest {
 
     @Before
     public void setUp(){
-        Thomas = new Constable();
+        Constable Jacob = new Constable();
     }
 
     @Test
     public void attack(){
-        Warrior Joe = new Warrior("Thomas");
-        Thomas.attack(Joe);
-        int expectedOutput = Joe.getHealth();
-        int actualOutput = 100;
-        assertEquals(expectedOutput,actualOutput);
+        Warrior Jacob = new Warrior("Jacob");
+        Thomas.attack(Jacob);
+//        System.out.println(Thomas.attack(Jacob));
+        int actualOutput = Jacob.getHealth();
+        int expectedOutput = 100;
+        assertEquals(expectedOutput,actualOutput);}
 
+//
+//
+//    }
 
-
-    }
-
-    @Test
-    public void arrest(){
-        Warrior Joe = new Warrior("Thomas");
-        Thomas.arrest(Joe);
-        String expectedOutput = Thomas+"arrested"+"Joe"+".";
-        String actualOutput = "Thomas arrested Joe.";
-        assertEquals(expectedOutput,actualOutput);
-
-    }
+//    @Test
+//    public void arrest(){
+//        Warrior warrior = new Warrior("Thomas");
+//        Thomas.arrest(Joe);
+//        String expectedOutput = Thomas+"arrested"+"Joe"+".";
+//        String actualOutput = "Thomas arrested Joe.";
+//        assertEquals(expectedOutput,actualOutput);
+//
+//    }
 
 
 }

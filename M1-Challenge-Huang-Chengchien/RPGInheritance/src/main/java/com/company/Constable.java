@@ -20,6 +20,10 @@ public class Constable extends Role {
         this.jurisdiction = jurisdiction;
     }
 
+    public Constable() {
+
+    }
+
 
     public boolean isJurisdiction() {
         return jurisdiction;

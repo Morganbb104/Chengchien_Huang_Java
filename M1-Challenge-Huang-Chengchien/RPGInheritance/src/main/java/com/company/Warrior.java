@@ -11,6 +11,7 @@ public class Warrior extends Role {
         this.setStamina(100);
         this.setSpeed(50);
         this.setAttackPower(10);
+        this.setShieldStrength(100);
         this.setRunning(false);
         this.setArrested(false);
     }
