@@ -46,7 +46,8 @@ public class Farmer extends Role {
     @Override
     public void attack(Role enemy){
         enemy.setHealth(enemy.getHealth()-this.getAttackPower());
-        System.out.println(this.getName() + " successfully attacked " + enemy);
+        String name = this.getName();
+        System.out.println(name + " successfully attacked " + enemy.getName()+ "." );
     }
 
 }
