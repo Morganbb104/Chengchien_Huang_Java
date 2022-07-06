@@ -23,8 +23,6 @@ public class ConstableTest {
 
     }
 
-
-
     @Test
     public void whileArrestedShouldReturnFalse() {
         Constable Cheng = new Constable("Cheng");
