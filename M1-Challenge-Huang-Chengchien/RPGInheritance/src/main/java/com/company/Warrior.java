@@ -1,8 +1,11 @@
 package com.company;
 
 public class Warrior extends Role {
-    public Warrior() {
+
+    int shieldStrength;
+    public Warrior(String warriorName) {
         super();
+        this.setName(warriorName);
         this.setStrength(75);
         this.setHealth(100);
         this.setStamina(100);
@@ -11,15 +14,26 @@ public class Warrior extends Role {
         this.setRunning(false);
         this.setArrested(false);
     }
-    int shieldStrength;
 
-    public Warrior(int shieldStrength) {
-        this.shieldStrength = shieldStrength;
+
+
+    public int getShieldStrength() {
+        return shieldStrength;
     }
 
+    public void setShieldStrength(int shieldStrength) {
+        this.shieldStrength = shieldStrength;
+    }
     @Override
-    public void attack() {
+    public void attack(Role enemy) {
+        enemy.setHealth(enemy.getHealth()-this.getAttackPower());
+        System.out.println(this.getName() + " successfully attacked " + enemy);
 
+    }
+
+    public void arrest(Role arrestedPerson){
+        String name = this.getName();
+        System.out.println(name + " arrested " + arrestedPerson.getName() + "." );
     }
 }
 

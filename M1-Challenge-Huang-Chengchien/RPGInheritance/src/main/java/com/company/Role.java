@@ -13,8 +13,24 @@ public abstract class Role {
     private boolean running;
     boolean arrested;
 
+    public Role() {
+
+    }
+
+
     public String getName() {
         return name;
+    }
+
+    public Role(String name, int strength, int health, int stamina, int speed, int attackPower, boolean running, boolean arrested) {
+        this.name = name;
+        this.strength = strength;
+        this.health = health;
+        this.stamina = stamina;
+        this.speed = speed;
+        this.attackPower = attackPower;
+        this.running = running;
+        this.arrested = arrested;
     }
 
     public void setName(String name) {
@@ -106,6 +122,6 @@ public abstract class Role {
 
     //Abilities:
     //attack another character
-    abstract public void attack();
 
+    public abstract void attack(Role enemy);
 }
