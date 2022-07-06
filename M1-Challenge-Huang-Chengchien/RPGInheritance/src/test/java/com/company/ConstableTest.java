@@ -7,35 +7,60 @@ import static org.junit.Assert.*;
 
 public class ConstableTest {
 
-    Constable Thomas;
+    Constable constable;
 
     @Before
     public void setUp(){
-        Constable Jacob = new Constable();
+        constable = new Constable("Thomas");
     }
 
     @Test
     public void attack(){
-        Warrior Jacob = new Warrior("Jacob");
-        Thomas.attack(Jacob);
-//        System.out.println(Thomas.attack(Jacob));
+        Constable Jacob = new Constable();
+        Constable.attack(constable("Jacob"));
         int actualOutput = Jacob.getHealth();
         int expectedOutput = 100;
-        assertEquals(expectedOutput,actualOutput);}
+        assertEquals(expectedOutput,actualOutput);
+    }
 
 //
-//
-//    }
-
 //    @Test
 //    public void arrest(){
-//        Warrior warrior = new Warrior("Thomas");
-//        Thomas.arrest(Joe);
+//        Constable constable = new Constable constable("Jacob");
+//
 //        String expectedOutput = Thomas+"arrested"+"Joe"+".";
 //        String actualOutput = "Thomas arrested Joe.";
 //        assertEquals(expectedOutput,actualOutput);
 //
 //    }
+    @Test
+    public void arrest() {
+        Constable Cheng = new Constable();
+        Cheng.arrest(constable);
+        boolean expectedValue = false;
+        boolean actualValue = constable.isArrested();
+        assertEquals(expectedValue, actualValue);
+}
 
+    private void constable(String jacob) {
+    }
+
+    @Test
+public void ReturnTheFalseInisJurisdiction() {
+    Constable constable = new Constable();
+    constable.isJurisdiction();
+    boolean expectedOutput = false;
+    boolean actualOutput = constable.isJurisdiction();
+    assertEquals(expectedOutput, actualOutput);
+}
+
+    @Test
+    public void ReturnTheNewValueInsetJurisdiction() {
+        Constable constable = new Constable();
+        constable.setJurisdiction(true);
+        boolean expectedOutput = true;
+        boolean actualOutput = constable.isJurisdiction();
+        assertEquals(expectedOutput, actualOutput);
+    }
 
 }
